@@ -1,0 +1,21 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif;
+    max-width:1600px
+}
+img{
+    margin-bottom: -6px; 
+    opacity: 0.8;
+    cursor: pointer;
+}
+img:hover{
+    opacity: 1;
+}
+nav{
+    z-index:3;
+    width:300px;
+    font-weight:bold
+}
+
+.content{
+    max-width:600px;
+}
