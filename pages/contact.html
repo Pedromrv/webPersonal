@@ -12,7 +12,7 @@
     <body>
             <!-- Sidebar/menu -->
         <nav class="" id="mySidebar"><br>
-            <h3 class=""><b>Pedro<br>Rodríguez</b></h3>
+            <h1 class=""><b>Pedro<br>Rodríguez</b></h1>
 
             <a href="../index.html"  class="">Home</a> 
             <a href="/pages/biography.html"  class="">Biografía</a>
@@ -21,26 +21,28 @@
         </nav>
         
         <!-- Contact section -->
-        <div class="" id="contact">
-            <div class="content" >
-            <h4 class="r"><b>Contact Me</b></h4>
-            <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="">
-                    <label>Nombre</label>
-                    <input class="" type="text" name="Name" required>
-                    </div>
-                    <div class="">
-                    <label>Correo</label>
-                    <input class="" type="text" name="Email" required>
-                    </div>
-                    <div class="">
-                    <label>Mensaje</label>
-                    <input class="" type="text" name="Message" required>
-                    </div>
-                    <button type="submit" class="">Enviar mensaje</button>
-                </form>
-            </div>
-        </div>
+        <section>
+            <article>
+                <h4 class="r"><b>Contacto</b></h4>
+                <p>¿Quieres tomar un Fanta naranja avec moi? Escribe sin miedo</p>
+            </article>
+        </section>
+        <section class="formuliere">
+            <form>
+                Nombre:
+                <input type="text" id="name" name="name" placeholder="Nombre">
+
+                Apellidos:
+                <input type="text" id="surname" name="surname" placeholder="Apellidos">
+                    
+                Comentarios:
+                <input type="text" id="comment" name="comment" placeholder="Escribe...">
+            
+                Correo:
+                <input type="email" id="email" name="email" placeholder="Correo">
+
+                <input type="submit" value="submit">
+            </form>
+        </section>
     </body>
 </html>
