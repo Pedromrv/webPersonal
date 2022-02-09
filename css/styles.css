@@ -6,12 +6,31 @@ body,h1,h2,h3,h4,h5 {
     box-sizing: inherit;
   }
 
-/* img:hover{
-    opacity: 1;
-} */
+/* 100% width y height para tapar toda la view */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+/* Añadir texto en la landing de video */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+img:hover{
+ transform: scale(1.05);
+}
 
 nav{
-    background-color: blue;
+    /* background-color: blue; */
     width: 130px;
     position: fixed;
     z-index: 1;
@@ -46,6 +65,7 @@ summary{
 }
 img{
     height:450px;
+    transition: all 0.5s ease-out;
 }
 .presentation, .skills{
     max-width:600px;
@@ -84,7 +104,6 @@ input[type=submit] {
 /* /formulario */
 
 .photos{
-    background-color: aqua;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
@@ -134,3 +153,19 @@ input[type=submit] {
     }
   }
 /* desktop */
+
+/* --------------- */
+/* Tablets*/
+/* @media screen and (min-width: 820px) {
+    main {
+        flex-direction: row;   
+    }
+} */
+
+ /* Desketop */
+/* @media screen and (min-width: 1024px) {
+    main {
+      flex-direction: row;
+      margin: 0% 10%;
+    }
+}  */
