@@ -35,6 +35,15 @@ section{
       
 }
 
+summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.presentation, .skills{
+    max-width:600px;
+}
+
 /* formulario */
 .formuliere{
     box-sizing: border-box;
@@ -45,7 +54,7 @@ form{
     padding: 20px;
 }
 
-input[type=text], #email{
+input[type=text], #email, #country{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
