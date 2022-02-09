@@ -1,13 +1,17 @@
 body,h1,h2,h3,h4,h5 {
     font-family: "Raleway", sans-serif;
-    
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 /* img:hover{
     opacity: 1;
 } */
 
 nav{
+    background-color: blue;
     width: 130px;
     position: fixed;
     z-index: 1;
@@ -29,10 +33,10 @@ nav a:hover {
   }
 section{
     padding-left: 11em;
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-left: 140px; /* Mismo ancho de la sidebar + posicion a la izda en px */
+    font-size: 28px;
     padding: 0px 10px;
-      
+    width: calc(100vw-130px);
 }
 
 summary{
@@ -40,9 +44,13 @@ summary{
     flex-direction: row;
     justify-content: space-evenly;
 }
+img{
+    height:450px;
+}
 .presentation, .skills{
     max-width:600px;
 }
+
 
 /* formulario */
 .formuliere{
@@ -76,19 +84,21 @@ input[type=submit] {
 /* /formulario */
 
 .photos{
+    background-color: aqua;
     display: flex;
-    flex-direction: row;
     flex-wrap:wrap;
-    margin: 0% 10%;
-
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
+.responsive-image {
+    max-width: 100%;
+  }
 
-img{
-    width: 305px;
-    height: auto;
-}
-
-
+  .cell img {
+    display: block;
+  }
 /* @media screen and (min-width: 820px) {
     main {
         flex-direction: row;   
@@ -102,3 +112,25 @@ img{
       margin: 0% 10%;
     }
 }  */
+
+/* tablet */
+@media screen and (min-width: 600px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .cell {
+      width: 50%;
+      margin: 1rem;
+    }
+  }
+/* tablet */
+
+/* desktop */
+  @media screen and (min-width: 1000px) {
+    .cell {
+      width: calc(100% / 3);
+    }
+  }
+/* desktop */
